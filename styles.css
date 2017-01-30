@@ -1,0 +1,133 @@
+.firstRow {
+
+    height: 150px;
+    background: rgb(61, 142, 255);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 5px 5px rgb(26, 93, 182);
+    transition-duration: 2s;
+}
+
+.middleRow {
+
+    background: white;
+    text-align:center;
+    font: 25px bold;
+    color: rgb(61, 142, 255);
+    text-shadow: 0 1px 2px rgba(116, 118, 129, 0.5);
+    font-family: "Bangers";
+}
+
+.lastRows {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+}
+
+
+.colorSquare {
+    width: 180px;
+    height: 180px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.colorSquare:hover {
+    cursor: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0, .9);
+    font-family: "Bangers";
+}
+
+
+.colorSquare:focus, .colorSquare:active, .colorSquare.active, .colorSquare:focus:active {
+    background-image: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.middleBtns {
+    display:inline-block;
+    border: none;
+    background: none;
+    padding: 8px;
+    height: 100%;
+    letter-spacing: 1px;
+    outline: none;
+
+}
+
+.middleBtns:hover {
+    background: rgb(61, 142, 255);
+    color: white;
+    transition-duration: 0.5s;
+    cursor: crosshair;
+}
+
+.clicked {
+    background: rgb(61, 142, 255);
+    color: white;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3.5em;
+    line-height: 80%;
+}
+
+
+
+#message {
+    width: 30%;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: bold;
+    display: inline-block;
+
+
+}
+
+.tryagain {
+
+    transition-duration: 0.5s;
+    opacity: 0;
+    transform: translate(50px, 50px);
+    visibility: hidden;
+}
+
+.match {
+
+    transform: scale(-1, 1);
+    transition-duration: 0.5s;
+}
+
+.win {
+    transition-duration: 1s;
+    transform: translate(0px, 0px);
+    opacity: 100;
+    visibility: visible;
+}
+
+.messageDisplay {
+    transform: scale(0.6);
+    transition-duration: 0.5s;
+}
+
